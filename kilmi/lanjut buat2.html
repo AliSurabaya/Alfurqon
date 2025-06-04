@@ -1,0 +1,95 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   DANA Kaget
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  </style>
+ </head>
+ <body class="bg-[#1681e6] min-h-screen flex flex-col">
+  <!-- Status bar simulation -->
+  <div class="flex justify-between text-white text-[12px] px-4 pt-2 font-normal">
+  </div>
+  <!-- Header -->
+  <header class="flex items-center space-x-3 px-4 py-4 text-white text-lg font-semibold">
+   <button aria-label="Back" class="focus:outline-none">
+    <i class="fas fa-arrow-left text-xl">
+    </i>
+   </button>
+   <h1>
+    DANA Kaget
+   </h1>
+  </header>
+  <!-- Card container -->
+  <div class="relative flex-grow flex justify-center items-center px-6">
+   <div class="relative w-full max-w-xs">
+    <!-- White card -->
+    <div class="bg-white rounded-3xl pt-10 pb-20 px-8 text-center relative z-20 shadow-md">
+     <h2 class="text-gray-800 font-semibold text-lg mb-8">
+      Detail Kirim
+     </h2>
+     <dl class="text-left max-w-xs mx-auto space-y-4 text-gray-600 font-normal text-base">
+      <div class="flex justify-between">
+       <dt>
+        Mode
+       </dt>
+       <dd class="font-semibold text-gray-900">
+        Kirim Acak
+       </dd>
+      </div>
+      <div class="flex justify-between">
+       <dt>
+        Jumlah Kirim
+       </dt>
+       <dd class="font-semibold text-gray-900">
+        Rp200.000
+       </dd>
+      </div>
+      <div class="flex justify-between">
+       <dt>
+        Jumlah Pemenang
+       </dt>
+       <dd class="font-semibold text-gray-900">
+        2
+       </dd>
+      </div>
+     </dl>
+     <!-- Bottom icons row -->
+     <div class="flex justify-between mt-16">
+      <a href="../kilmi/lanjut buat.html">
+      <button aria-label="Back" class="border border-[#1681e6] rounded-lg w-12 h-12 flex items-center justify-center text-[#1681e6] text-2xl focus:outline-none">
+       <i class="fas fa-arrow-left">
+       </i>
+      </button>
+      </a>
+      <a href="../kilmi/edit.html">
+      <button aria-label="Edit" class="border border-[#1681e6] rounded-lg w-12 h-12 flex items-center justify-center text-[#1681e6] text-xl focus:outline-none">
+       <i class="fas fa-pencil-alt">
+       </i>
+      </button>
+      </a>
+     </div>
+    </div>
+    <!-- Blue patterned shape behind card -->
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-xs h-28 rounded-b-3xl overflow-hidden z-10">
+     <img alt="Blue geometric pattern with rounded bottom corners behind the white card" class="w-full h-full object-cover" height="112" src="https://storage.googleapis.com/a1aa/image/784c96a6-34d6-4c54-9bae-f6742a0c31e9.jpg" width="320"/>
+    </div>
+   </div>
+  </div>
+  <!-- Bottom button -->
+  <div class="px-6 pb-8">
+   <button class="w-full bg-white text-[#1681e6] font-semibold text-lg py-3 rounded-md shadow-sm hover:bg-gray-100 transition" type="button">
+    BUAT DANA KAGET
+   </button>
+  </div>
+ </body>
+</html>

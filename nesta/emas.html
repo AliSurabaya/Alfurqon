@@ -1,0 +1,180 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   eMAS
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar hidden for the chart container if needed */
+    /* Hide number input arrows if any */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+ </head>
+ <body class="bg-white font-sans text-black">
+  <!-- Top blue header -->
+  <header class="bg-[#0A7EE0] flex items-center px-4 py-3 text-white relative select-none">
+    <a href="profil.html">
+   <button aria-label="Back" class="mr-3">
+    <i class="fas fa-chevron-left text-xl">
+    </i>
+   </button>
+</a>
+   <h1 class="text-xl font-normal">
+    eMAS
+   </h1>
+   <div class="ml-auto flex items-center space-x-4">
+    <div class="flex items-center space-x-1 text-sm font-light">
+    </div>
+    <div class="flex items-center space-x-1 text-sm font-light">
+    </div>
+    <button aria-label="Info" class="ml-2">
+     <i class="fas fa-list-alt text-lg">
+     </i>
+    </button>
+   </div>
+  </header>
+  <main class="p-4 space-y-4 max-w-md mx-auto">
+   <!-- Cetak jadi eMAS Fisik card -->
+   <button class="w-full flex items-center space-x-4 bg-white rounded-lg shadow px-4 py-3" type="button">
+    <img alt="Icon of a box with gold bars inside" class="w-10 h-10 rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/da640899-50b3-4a58-e6d8-8107577ee3fd.jpg" width="40"/>
+    <span class="text-black font-semibold text-base">
+     Cetak jadi eMAS Fisik
+    </span>
+    <i class="fas fa-chevron-right ml-auto text-gray-400">
+    </i>
+   </button>
+   <!-- Chart container -->
+   <section aria-label="Gold price chart and options" class="bg-white rounded-xl shadow p-4 space-y-4">
+    <!-- Tabs -->
+    <div class="flex border border-gray-200 rounded-full overflow-hidden w-max">
+     <button class="bg-[#0A7EE0] text-white text-sm font-normal px-5 py-1 rounded-full" type="button">
+      Grafik Harga Beli
+     </button>
+     <button class="text-gray-500 text-sm font-normal px-5 py-1 rounded-full" type="button">
+      Grafik Harga Jual
+     </button>
+    </div>
+    <!-- Chart area -->
+    <div class="relative bg-[#E6F5E9] rounded-b-lg rounded-t-none h-48 w-full">
+     <svg aria-hidden="true" class="absolute top-0 left-0 w-full h-full" preserveaspectratio="none" viewbox="0 0 300 192" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 140 Q40 120 80 130 T160 90 T240 80 T300 40 L300 192 L0 192 Z" fill="#D9F0D9" stroke="none">
+      </path>
+      <path d="M0 140 Q40 120 80 130 T160 90 T240 80 T300 40" fill="none" stroke="#0A7EE0" stroke-linejoin="round" stroke-width="2">
+      </path>
+      <circle cx="110" cy="110" fill="#0A7EE0" r="10">
+      </circle>
+     </svg>
+     <!-- Tooltip -->
+     <div class="absolute top-[110px] left-[110px] -translate-x-1/2 -translate-y-full bg-white border border-gray-300 rounded-md px-2 py-1 text-xs font-semibold shadow" style="width: 110px;">
+      <div>
+       19 Mei 2025
+      </div>
+      <div class="font-bold">
+       Rp1.769.574
+      </div>
+     </div>
+     <!-- Y-axis labels -->
+     <div class="absolute top-4 right-2 flex flex-col justify-between h-full text-gray-500 text-xs font-normal leading-none">
+      <span>
+       Rp1820rb
+      </span>
+      <span>
+       Rp1790rb
+      </span>
+      <span>
+       Rp1760rb
+      </span>
+      <span>
+       Rp1730rb
+      </span>
+      <span>
+       Rp1700rb
+      </span>
+     </div>
+    </div>
+    <!-- Time range buttons -->
+    <div class="flex space-x-2">
+     <button class="bg-[#0A7EE0] text-white text-xs font-normal rounded-full px-4 py-1" type="button">
+      7 Hari
+     </button>
+     <button class="border border-gray-300 text-gray-700 text-xs font-normal rounded-full px-4 py-1" type="button">
+      1 Bulan
+     </button>
+     <button class="border border-gray-300 text-gray-700 text-xs font-normal rounded-full px-4 py-1" type="button">
+      3 Bulan
+     </button>
+     <button class="border border-gray-300 text-gray-700 text-xs font-normal rounded-full px-4 py-1" type="button">
+      6 Bulan
+     </button>
+     <button class="border border-gray-300 text-gray-700 text-xs font-normal rounded-full px-4 py-1" type="button">
+      1 Tahun
+     </button>
+    </div>
+    <!-- Notification box -->
+    <div class="flex items-center space-x-3 border border-gray-300 rounded-lg p-3 text-gray-600 text-xs" role="alert">
+     <img alt="Bell icon with upward arrow" class="w-8 h-8 flex-shrink-0" height="32" src="https://storage.googleapis.com/a1aa/image/a2740c1c-89e4-4ccc-5004-6c4b848eab89.jpg" width="32"/>
+     <p class="flex-1 leading-tight">
+      Atur notifikasi untuk tahu info harga emas sesuai targetmu.
+     </p>
+     <button class="text-[#0A7EE0] font-semibold text-sm focus:outline-none" type="button">
+      ATUR
+     </button>
+    </div>
+    <!-- Footer text with logos -->
+    <div class="flex items-center justify-center space-x-1 text-xs text-gray-500 select-none">
+     <span>
+      Didukung oleh
+     </span>
+     <img alt="Treasury logo" class="h-4" height="16" src="https://storage.googleapis.com/a1aa/image/229045af-e6d3-41a1-0894-a4682a4800d5.jpg" width="40"/>
+     <span>
+      dan diawasi oleh
+     </span>
+     <img alt="BAPPEBTI logo" class="h-4" height="16" src="https://storage.googleapis.com/a1aa/image/8f59c2ec-2b6c-4c4c-13a1-e767a9fae356.jpg" width="60"/>
+     <i class="fas fa-chevron-right text-gray-400">
+     </i>
+    </div>
+   </section>
+   <!-- Bottom price and buttons -->
+   <section aria-label="Latest gold prices and actions" class="flex border-t border-gray-200 pt-4 space-x-4 max-w-md mx-auto">
+    <div class="flex-1 flex flex-col space-y-1">
+     <span class="text-xs text-gray-600">
+      Harga Jual Terbaru
+     </span>
+     <span class="font-bold text-xl">
+      Rp1.753.470
+      <span class="text-base font-normal">
+       /g
+      </span>
+     </span>
+     <button class="w-full border border-gray-300 rounded-md py-3 text-gray-400 font-semibold text-base cursor-not-allowed" disabled="" type="button">
+      JUAL eMAS
+     </button>
+    </div>
+    <div class="flex-1 flex flex-col space-y-1">
+     <span class="text-xs text-gray-600">
+      Harga Beli Terbaru
+     </span>
+     <span class="font-bold text-xl">
+      Rp1.813.431
+      <span class="text-base font-normal">
+       /g
+      </span>
+     </span>
+     <a href="beli emas.html">
+     <button class="w-full bg-[#0A7EE0] rounded-md py-3 text-white font-semibold text-base" type="button">
+      BELI eMAS
+     </button>
+    </a>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>

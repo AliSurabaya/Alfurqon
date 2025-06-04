@@ -1,0 +1,125 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Detail Transaksi
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#0485E1] min-h-screen flex flex-col items-center">
+  
+  <!-- Top bar with back arrow and title -->
+  <header class="w-full max-w-md flex items-center gap-3 px-4 py-3 text-white"> 
+    <a href="aktivitas.html">
+   <button aria-label="Back" class="text-white text-lg">
+    <i class="fas fa-arrow-left">
+    </i>
+   </button>
+   </a>
+   <h1 class="text-base font-normal">
+    Detail Transaksi
+   </h1>
+  </header>
+  <!-- Main white card -->
+  <main class="w-full max-w-md bg-white rounded-xl p-5 mb-4 shadow-md" style="box-shadow: 0 0 10px rgb(0 0 0 / 0.05)">
+   <!-- QRIS logo -->
+   <div class="flex justify-center mb-4">
+    <img alt="QRIS logo black text with square border corners" class="h-12 object-contain" height="50" src="https://storage.googleapis.com/a1aa/image/3908304f-25a2-4500-59d0-8cecf3447fc8.jpg" width="150"/>
+   </div>
+   <!-- Date and ID row -->
+   <div class="flex justify-between text-xs text-gray-500 mb-3 px-1 select-none" style="letter-spacing: 0.02em">
+    <span>
+     29 Apr 2025 • 12:45
+    </span>
+    <span>
+     ID DANA 0856 • • • • 6718
+    </span>
+   </div>
+   <!-- Success message -->
+   <div class="flex items-center gap-2 text-xs text-gray-600 mb-1">
+    <i class="fas fa-check-circle text-green-600">
+    </i>
+    <span>
+     Transaksi berhasil!
+    </span>
+   </div>
+   <!-- Payment info -->
+   <p class="text-sm font-semibold mb-2">
+    Pembayaran ke DAPUR-BUNDA
+   </p>
+   <!-- Total Bayar row with background -->
+   <div class="flex justify-between items-center bg-[#E6F3FC] rounded-md px-3 py-2 mb-3 font-semibold text-sm">
+    <span>
+     Total Bayar
+    </span>
+    <span>
+     Rp5.000
+    </span>
+   </div>
+   <!-- Payment method row -->
+   <div class="flex justify-between text-xs text-gray-500 mb-3 px-1">
+    <span>
+     Metode Pembayaran
+    </span>
+    <span class="text-right">
+     Saldo DANA
+     <br/>
+     (SmartPay)
+    </span>
+   </div>
+   <hr class="border-gray-200 mb-4"/>
+   <!-- Detail Transaksi label -->
+   <p class="text-xs font-semibold mb-4">
+    Detail Transaksi
+   </p>
+   <!-- Button -->
+   <button class="w-full bg-[#0485E1] text-white text-sm font-semibold rounded-md py-3" type="button">
+    BUAT PATUNGAN
+   </button>
+  </main>
+  <!-- Banner card -->
+  <section class="w-full max-w-md bg-white rounded-xl p-3 mb-4 shadow-md" style="box-shadow: 0 0 10px rgb(0 0 0 / 0.05)">
+   <img alt="Blue banner with Aman Pakai DANA text, large 100% text, Jaminan Uang Kembali in white and yellow, DANA Protection badge and smartphone image on right" class="w-full rounded-lg object-cover" height="120" src="https://storage.googleapis.com/a1aa/image/5b0b7932-c396-405f-794a-5f05255e8330.jpg" width="400"/>
+  </section>
+  <!-- Share button -->
+  <button class="w-full max-w-md border border-[#0485E1] text-[#0485E1] text-xs font-semibold rounded-md py-2 mb-4" type="button">
+   BAGIKAN
+  </button>
+  <!-- Security info -->
+  <div class="flex items-center gap-1 text-xs text-gray-600 mb-6 select-none">
+   <span>
+    Diamankan oleh
+   </span>
+   <img alt="DANA PROTECTION logo in blue" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/93a73bc2-a2c0-4f52-30de-ae68917698d3.jpg" width="80"/>
+  </div>
+  <!-- Footer text -->
+  <footer class="max-w-md px-4 text-center text-[9px] text-gray-300 leading-tight select-none">
+   <p>
+    *Termasuk PPN
+   </p>
+   <p>
+    PT Espay Debit Indonesia Koe
+   </p>
+   <p>
+    NPWP: 073.210.332.0-613.000
+   </p>
+   <p>
+    Capital Place Lt. 18, Jl. Jend. Gatot Subroto Kav. 18, Kuningan Barat,
+   </p>
+  </footer>
+  <!-- Bottom help button -->
+  <button class="w-full max-w-md border border-[#0485E1] text-[#0485E1] text-xs font-semibold rounded-md py-2 mt-6 mb-6 flex justify-center items-center gap-2" type="button">
+   <img alt="JDI logo round blue and yellow" class="h-5 w-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/e2c99407-2839-4a98-cb7d-bbb3f964c1cc.jpg" width="20"/>
+   BUTUH BANTUAN?
+  </button>
+ </body>
+</html>

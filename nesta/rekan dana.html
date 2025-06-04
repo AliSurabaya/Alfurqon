@@ -1,0 +1,117 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Daftar Rekan Dana
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-[#1681e6] text-white flex items-center px-4 py-3 relative">
+    <a href="profil.html">
+   <button aria-label="Back" class="text-white text-2xl pr-4">
+    <i class="fas fa-chevron-left">
+    </i>
+   </button>
+  </a>
+   <h1 class="text-lg font-semibold flex-1 text-center mr-8">
+    Daftar Rekan Dana
+   </h1>
+  </header>
+  <main class="flex-grow px-4 pt-4 pb-6">
+   <!-- Profil Kamu Card -->
+   <section aria-label="Profil Kamu" class="bg-white rounded-xl p-4 mb-4 shadow-sm max-w-md mx-auto">
+    <div class="flex items-center space-x-4 mb-2">
+     <img alt="Ilustrasi pria mengenakan baju biru memegang ponsel" class="w-12 h-12 rounded-full flex-shrink-0" height="48" src="https://storage.googleapis.com/a1aa/image/12781710-815d-423a-9b08-a63e602a9019.jpg" width="48"/>
+     <div>
+      <h2 class="text-lg font-semibold text-black leading-tight">
+       Profil Kamu
+      </h2>
+      <p class="text-gray-500 text-sm leading-snug max-w-xs">
+       Tentukan nama unik dan jam buka yang kamu mau ya
+      </p>
+     </div>
+    </div>
+    <form class="space-y-4">
+     <div>
+      <label class="block text-gray-600 text-sm font-semibold mb-1" for="nama-usaha">
+       Nama Usaha
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-3 py-2 text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1681e6] focus:border-transparent" id="nama-usaha" placeholder="Bikin usahamu gampang dicari" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-600 text-sm font-semibold mb-1 flex items-center space-x-1">
+       <span>
+        Jam Buka
+       </span>
+       <span aria-label="Informasi jam buka" class="text-[#1681e6] text-xs cursor-pointer">
+        <i class="fas fa-info-circle">
+        </i>
+       </span>
+      </label>
+      <div class="flex items-center space-x-2 max-w-xs">
+       <input aria-label="Jam buka awal" class="w-20 border border-gray-300 rounded-md px-3 py-2 text-center text-base focus:outline-none focus:ring-2 focus:ring-[#1681e6] focus:border-transparent" type="text" value="10.00"/>
+       <span class="text-gray-400 text-xl select-none">
+        &gt;
+       </span>
+       <input aria-label="Jam buka akhir" class="w-20 border border-gray-300 rounded-md px-3 py-2 text-center text-base focus:outline-none focus:ring-2 focus:ring-[#1681e6] focus:border-transparent" type="text" value="20.00"/>
+      </div>
+     </div>
+    </form>
+   </section>
+   <!-- Yuk gabung jadi Rekan DANA Card -->
+   <section aria-label="Yuk gabung jadi Rekan DANA" class="bg-white rounded-xl p-4 shadow-sm max-w-md mx-auto">
+    <h3 class="text-black font-semibold text-lg mb-4">
+     Yuk gabung jadi Rekan DANA!
+    </h3>
+    <ul class="space-y-4 text-gray-600 text-sm">
+     <li class="flex space-x-3">
+      <img alt="Ilustrasi pin lokasi toko dengan warna merah dan biru" class="flex-shrink-0 w-10 h-10 rounded-full bg-white" height="40" src="https://storage.googleapis.com/a1aa/image/689fcb37-d550-4c7f-c116-08844c1f5541.jpg" width="40"/>
+      <p class="leading-relaxed">
+       Mulai usaha kecil dengan isi Saldo DANA orang lain. Cukup pakai HP!
+      </p>
+     </li>
+     <li class="flex space-x-3">
+      <img alt="Ilustrasi nota atau struk pembayaran berwarna biru dan putih" class="flex-shrink-0 w-10 h-10 rounded-full bg-white" height="40" src="https://storage.googleapis.com/a1aa/image/1b174316-19b1-4909-30f7-0d829cf43fc1.jpg" width="40"/>
+      <p class="leading-relaxed">
+       Daftarnya mudah, bisa langsung di aplikasi DANA.
+      </p>
+     </li>
+     <li class="flex space-x-3">
+      <img alt="Ilustrasi toko kecil dengan warna biru dan kuning" class="flex-shrink-0 w-10 h-10 rounded-full bg-white" height="40" src="https://storage.googleapis.com/a1aa/image/299242a8-f368-401f-5736-142eba6a6c82.jpg" width="40"/>
+      <p class="leading-relaxed">
+       Lokasimu bisa dicari pelanggan di DANA, bikin usaha jadi fleksibel.
+      </p>
+     </li>
+    </ul>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-100 px-4 py-4 text-center text-gray-600 text-sm max-w-md mx-auto w-full">
+   <p>
+    Dengan mendaftar, saya setuju dengan
+    <a class="text-[#1681e6] underline" href="#">
+     Syarat &amp; Ketentuan
+    </a>
+    dan
+    <a class="text-[#1681e6] underline" href="#">
+     Pemberitahuan Privasi
+    </a>
+    yang berlaku.
+   </p>
+   <button class="mt-3 w-full bg-gray-400 text-white font-semibold py-3 rounded-md cursor-not-allowed select-none" disabled="" type="button">
+    DAFTAR
+   </button>
+  </footer>
+ </body>
+</html>

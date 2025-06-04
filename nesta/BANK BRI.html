@@ -1,0 +1,118 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Isi Saldo
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar removal for mobile look */
+    body {
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+ </head>
+ <body class="bg-[#0B7ED9] font-sans min-h-screen flex flex-col">
+  <!-- Header with back arrow and title -->
+  <header class="flex items-center space-x-3 px-4 py-3 text-white text-lg font-semibold">
+    <a href="isi saldo.html">
+   <button aria-label="Back" class="focus:outline-none">
+    <i class="fas fa-arrow-left">
+    </i>
+   </button>
+  </a>
+   <h1>
+    Isi Saldo
+   </h1>
+  </header>
+  <!-- Main card container -->
+  <main class="bg-white rounded-2xl mx-4 p-4 mb-4">
+   <div class="flex justify-between items-center mb-3">
+    <div class="flex items-center space-x-2">
+     <img alt="BRI bank logo in blue and white" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/d12665cc-d1d7-4b76-c081-c77773211736.jpg" width="40"/>
+     <span class="text-2xl font-extrabold text-[#0B7ED9] select-none">
+      BRI
+     </span>
+    </div>
+    <button class="text-[#0B7ED9] border border-[#0B7ED9] rounded-full px-4 py-1 text-sm font-semibold hover:bg-[#0B7ED9] hover:text-white transition" type="button">
+     GANTI
+    </button>
+   </div>
+   <!-- Tabs -->
+   <nav class="flex border-b border-[#0B7ED9] mb-4 select-none">
+    <button class="text-[#0B7ED9] font-semibold pb-1 border-b-2 border-[#0B7ED9] text-sm" type="button">
+     Akun Virtual
+    </button>
+    <button class="text-gray-500 font-normal ml-6 pb-1 text-sm" type="button">
+     BI-FAST
+    </button>
+   </nav>
+   <!-- Virtual Account Number Section -->
+   <section class="text-center mb-3">
+    <p class="font-semibold text-base mb-2 select-none">
+     Nomor Akun Virtual BRI
+    </p>
+    <button aria-label="Copy virtual account number" class="bg-[#F68B1F] text-white font-semibold text-lg rounded-lg px-6 py-3 flex items-center justify-center mx-auto select-text" type="button">
+     <span>
+      88810 0812 3246 1038
+     </span>
+     <i class="far fa-copy ml-3">
+     </i>
+    </button>
+    <p class="bg-gray-200 text-gray-500 text-xs rounded-md mt-2 py-1 select-none max-w-md mx-auto">
+     Kamu bisa isi saldo hingga Rp19.999.900
+    </p>
+   </section>
+  </main>
+  <!-- Accordion container -->
+  <section class="bg-white rounded-2xl mx-4 mb-4 divide-y divide-gray-200 select-none">
+   <details class="px-4 py-4 cursor-pointer">
+    <summary class="list-none font-normal text-base flex justify-between items-center">
+     Internet Banking BRI (Web Version)
+     <i class="fas fa-chevron-down text-gray-400">
+     </i>
+    </summary>
+   </details>
+   <details class="px-4 py-4 cursor-pointer">
+    <summary class="list-none font-normal text-base flex justify-between items-center">
+     Internet Banking BRI (Mobile Version)
+     <i class="fas fa-chevron-down text-gray-400">
+     </i>
+    </summary>
+   </details>
+   <details class="px-4 py-4 cursor-pointer">
+    <summary class="list-none font-normal text-base flex justify-between items-center">
+     BRIMO
+     <i class="fas fa-chevron-down text-gray-400">
+     </i>
+    </summary>
+   </details>
+   <details class="px-4 py-4 cursor-pointer">
+    <summary class="list-none font-normal text-base flex justify-between items-center">
+     ATM BRI
+     <i class="fas fa-chevron-down text-gray-400">
+     </i>
+    </summary>
+   </details>
+   <details class="px-4 py-4 cursor-pointer rounded-b-2xl">
+    <summary class="list-none font-normal text-base flex justify-between items-center">
+     Mini ATM BRI
+     <i class="fas fa-chevron-down text-gray-400">
+     </i>
+    </summary>
+   </details>
+  </section>
+  <section class="bg-white rounded-2xl mx-4 mb-4 px-4 py-4 select-none">
+   <details open="">
+    <summary class="list-none font-normal text-base flex justify-between items-center cursor-pointer">
+     Syarat dan Ketentuan Biaya
+     <i class="fas fa-chevron-up text-gray-400">
+     </i>
+    </summary>
+   </details>
+  </section>
+ </body>
+</html>

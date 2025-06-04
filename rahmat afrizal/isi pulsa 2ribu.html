@@ -1,0 +1,123 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Payment Confirmation
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white flex items-center justify-between px-4 py-3 rounded-b-2xl">
+   <div class="flex items-center space-x-2">
+    <img alt="Dana Protection icon" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/3c45ea08-8db6-414f-d34b-e8f6bccf6e64.jpg" width="24"/>
+    <div class="text-blue-600 font-extrabold text-sm leading-none">
+     DANA
+     <br/>
+     PROTECTION
+    </div>
+   </div>
+   <div class="flex items-center space-x-2">
+    <img alt="Pay icon" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/935633dd-4ae7-4ee0-35d6-e5d9a1cfb752.jpg" width="24"/>
+    <span class="text-blue-600 font-semibold text-lg">
+     PAY
+    </span>
+   </div>
+  </header>
+  <!-- Main content -->
+  <main>
+   <section class="bg-blue-600 px-4 py-5 flex items-center space-x-4">
+    <a href="pulsa dan data.html">
+    <button aria-label="Back" class="text-white text-2xl mr-2">
+     <i class="fas fa-arrow-left">
+     </i>
+    </button>
+</a>
+    <h1 class="text-white text-base font-normal flex-1 text-center mr-8">
+     Konfirmasi Pembayaran
+    </h1>
+   </section>
+   <section class="bg-blue-600 flex items-center space-x-4 px-4 py-5">
+    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center">
+     <img alt="Blue circle with white wave icon" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/8f149e37-14d1-4deb-c3d9-4960538aed3d.jpg" width="24"/>
+    </div>
+    <div class="text-white">
+     <h2 class="text-xl font-semibold leading-tight">
+      Isi Pulsa
+     </h2>
+     <p class="text-sm font-normal leading-tight">
+      Pulsa Telkomsel 2.000 081232461038
+     </p>
+    </div>
+   </section>
+   <section class="bg-white px-4 py-6">
+    <div class="flex justify-between items-center mb-4">
+     <span class="text-lg font-normal text-gray-900">
+      Total Harga
+     </span>
+     <span class="text-orange-500 font-extrabold text-2xl">
+      Rp3.300
+     </span>
+    </div>
+    <div class="mb-2">
+     <span class="font-semibold text-gray-600">
+      Tambahan
+     </span>
+    </div>
+    <label class="flex justify-between items-start cursor-pointer select-none" for="insurance">
+     <div class="flex space-x-3">
+      <input class="mt-1 w-5 h-5 border border-gray-400 rounded" id="insurance" type="checkbox"/>
+      <div>
+       <div class="flex items-center space-x-1">
+        <span class="text-lg font-normal text-gray-900">
+         Asuransi Layar HP
+        </span>
+        <i aria-label="Information" class="fas fa-info-circle text-blue-600 text-sm" title="Information">
+        </i>
+       </div>
+       <p class="text-gray-500 text-sm max-w-xs leading-tight">
+        Perlindungan ekstra untuk layar HP kamu hingga Rp100.000!
+       </p>
+      </div>
+     </div>
+     <span class="text-gray-600 text-lg font-normal mt-1">
+      Rp200
+     </span>
+    </label>
+   </section>
+  </main>
+  <!-- Bottom payment bar -->
+  <footer class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 px-4 py-3">
+   <div class="flex justify-between items-center mb-3">
+    <div class="flex items-center space-x-3">
+     <div class="w-10 h-8 rounded-md bg-blue-600 flex items-center justify-center">
+      <img alt="DANA logo white on blue background" class="w-5 h-5" height="20" src="https://storage.googleapis.com/a1aa/image/d1e7db9c-5700-45ec-7ec8-7d7a58044a99.jpg" width="20"/>
+     </div>
+     <div>
+      <p class="text-gray-500 text-xs">
+       Saldo DANA
+      </p>
+      <p class="text-black text-base font-normal">
+       Rp100 (Isi Saldo)
+      </p>
+     </div>
+    </div>
+    <button class="text-blue-600 font-semibold text-sm border border-blue-600 rounded-full px-4 py-1 hover:bg-blue-50" type="button">
+     GANTI
+    </button>
+   </div>
+   <button class="w-full bg-blue-600 text-white font-semibold text-lg py-3 rounded-lg" type="button">
+    BAYAR Rp3.300
+   </button>
+  </footer>
+ </body>
+</html>

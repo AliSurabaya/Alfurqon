@@ -1,0 +1,100 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Beli eMAS
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white min-h-screen flex flex-col">
+  <!-- Top bar with time and status icons -->
+  <!-- Header blue section -->
+  <div class="bg-[#0D8AFF] px-4 pt-4 pb-6 relative">
+   <div class="flex items-center space-x-3 text-white text-lg font-semibold">
+    <a href="emas.html">
+    <button aria-label="Back" class="focus:outline-none">
+     <i class="fas fa-arrow-left">
+     </i>
+    </button>
+</a>
+    <span>
+     Beli eMAS
+    </span>
+   </div>
+   <p class="mt-4 text-white text-sm font-normal">
+    Harga beli terkini
+   </p>
+   <p class="mt-1 text-white font-extrabold text-2xl leading-none">
+    Rp1.813.431
+    <span class="font-normal text-base">
+     /gram
+    </span>
+   </p>
+   <div class="mt-4 bg-white rounded-lg flex items-center px-3 py-2 max-w-full" role="alert">
+    <div class="flex-shrink-0 text-orange-500">
+     <i class="fas fa-info-circle">
+     </i>
+    </div>
+    <p class="ml-2 text-black text-sm font-normal truncate">
+     Jumlah minimum pembelian emas
+     <span class="font-semibold">
+      Rp182.
+     </span>
+    </p>
+    <button aria-label="Close alert" class="ml-auto text-black focus:outline-none">
+     <i class="fas fa-times">
+     </i>
+    </button>
+   </div>
+   <img alt="Blue treasure chest icon with sun rays above" class="absolute right-4 top-8 w-20 h-20 opacity-30 select-none pointer-events-none" draggable="false" height="80" src="https://storage.googleapis.com/a1aa/image/317afb08-c2b2-4aa8-55ec-a54b06a558e8.jpg" width="80"/>
+  </div>
+  <!-- Main content -->
+  <main class="flex-grow px-4 pt-6 pb-4">
+   <label class="block text-gray-500 font-semibold text-sm mb-1" for="rupiahInput">
+    Pembelian dalam Rupiah
+   </label>
+   <input class="w-full border-b border-gray-300 text-3xl font-extrabold text-gray-400 focus:outline-none bg-transparent" id="rupiahInput" readonly="" type="text" value="Rp0"/>
+   <div class="flex flex-col items-center mt-8">
+    <button aria-label="Switch amount type" class="bg-[#0D8AFF] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl">
+     <i class="fas fa-exchange-alt">
+     </i>
+    </button>
+    <p class="mt-2 text-gray-500 text-sm font-normal">
+     Jumlah dalam gram
+    </p>
+    <p class="text-3xl font-extrabold text-gray-900 mt-1">
+     0 gram
+    </p>
+   </div>
+  </main>
+  <!-- Bottom buttons -->
+  <footer class="px-4 pb-6 space-y-3">
+   <div class="flex justify-between space-x-2 overflow-x-auto">
+    <button class="flex-shrink-0 border border-gray-300 rounded-full px-4 py-1 text-gray-600 text-sm whitespace-nowrap">
+     Rp1.000
+    </button>
+    <button class="flex-shrink-0 border border-gray-300 rounded-full px-4 py-1 text-gray-600 text-sm whitespace-nowrap">
+     Rp10.000
+    </button>
+    <button class="flex-shrink-0 border border-gray-300 rounded-full px-4 py-1 text-gray-600 text-sm whitespace-nowrap">
+     Rp100.000
+    </button>
+    <button class="flex-shrink-0 border border-gray-300 rounded-full px-4 py-1 text-gray-600 text-sm whitespace-nowrap">
+     Rp1.000.000
+    </button>
+   </div>
+   <button class="w-full bg-gray-400 text-white text-lg font-normal py-3 rounded" disabled="">
+    BELI
+   </button>
+  </footer>
+ </body>
+</html>

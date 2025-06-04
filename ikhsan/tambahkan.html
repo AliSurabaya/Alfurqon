@@ -1,0 +1,107 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Tambah Kartu Baru
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .font-mono-custom {
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+ </head>
+ <body class="bg-white min-h-screen flex flex-col">
+  <!-- Top blue header with back arrow and title -->
+  <header class="bg-[#0a82e6] text-white relative pt-[env(safe-area-inset-top)]">
+   <div class="flex items-center px-4 py-4">
+    <a href="dompet.html">
+    <button aria-label="Back" class="text-white text-2xl mr-4">
+     <i class="fas fa-arrow-left">
+     </i>
+    </button>
+  </a>
+    <h1 class="text-lg font-normal flex-1 text-center mr-8">
+     Tambah Kartu Baru
+    </h1>
+   </div>
+  </header>
+  <main class="flex-grow px-4 pt-6 pb-24">
+   <!-- Card preview -->
+   <div class="relative rounded-xl overflow-hidden" style="background: linear-gradient(135deg, #0a82e6 0%, #4ea6f7 100%);">
+    <div class="p-6 rounded-xl border border-white/40">
+     <div class="flex justify-between items-center mb-6">
+      <div class="flex items-center space-x-2">
+       <i class="fas fa-university text-white text-xl">
+       </i>
+       <span class="text-white font-semibold text-lg select-none">
+        BANK
+       </span>
+      </div>
+      <img alt="Faint bank building logo watermark on card background" class="absolute right-4 top-4 opacity-10 pointer-events-none select-none" height="80" src="https://storage.googleapis.com/a1aa/image/750fa642-4cdc-421e-642e-219ef4f7851f.jpg" style="width: 80px; height: 80px;" width="80"/>
+     </div>
+     <div class="mb-6">
+      <img alt="Credit card chip" class="inline-block" height="30" src="https://storage.googleapis.com/a1aa/image/94711638-3c6b-4df5-012f-50df4bae3176.jpg" width="40"/>
+     </div>
+     <div class="text-white font-mono-custom text-xl tracking-widest mb-2 select-none">
+      0000 0000 0000 0000
+     </div>
+     <div class="text-white font-mono-custom text-xl select-none">
+      MM/YY
+     </div>
+    </div>
+   </div>
+   <!-- Input label and field -->
+   <label class="block mt-8 mb-1 text-[13px] font-semibold text-[#d87f00]" for="card-number">
+    Nomor kartu
+   </label>
+   <div class="relative">
+    <input class="w-full border-b border-[#d87f00] text-gray-400 placeholder-gray-400 pr-7 focus:outline-none focus:ring-0 focus:border-[#d87f00] text-base" id="card-number" placeholder="Nomor kartu" type="text"/>
+    <button aria-label="Clear input" class="absolute right-0 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600" type="button">
+     <i class="fas fa-times-circle">
+     </i>
+    </button>
+   </div>
+  </main>
+  <!-- Supported cards section -->
+  <section class="mx-4 mb-4 rounded-lg border border-gray-200 p-4 text-center">
+   <p class="mb-3 font-normal text-base text-black">
+    Jenis kartu yang didukung
+   </p>
+   <div class="flex justify-center gap-3">
+    <img alt="Mastercard logo" class="inline-block" height="30" src="https://storage.googleapis.com/a1aa/image/38cce76b-0052-4135-c771-4f333ff89ba8.jpg" width="48"/>
+    <img alt="Visa logo" class="inline-block" height="30" src="https://storage.googleapis.com/a1aa/image/2cea097e-230b-43d4-9028-a1d950f42a77.jpg" width="48"/>
+    <img alt="JCB logo" class="inline-block" height="30" src="https://storage.googleapis.com/a1aa/image/a0faa1b2-8666-449f-99f0-bc9efb5d5dc6.jpg" width="48"/>
+    <img alt="American Express logo" class="inline-block" height="30" src="https://storage.googleapis.com/a1aa/image/3daa59bd-d55b-4e31-75f3-527b8d62ec33.jpg" width="48"/>
+    <img alt="GPN logo" class="inline-block" height="30" src="https://storage.googleapis.com/a1aa/image/2ee2b4ff-b207-4b42-3f3b-8b8896518ff3.jpg" width="48"/>
+   </div>
+  </section>
+  <!-- Express pay info bar -->
+  <section class="mx-4 mb-6 rounded-lg bg-[#d9f1ff] px-4 py-2 flex items-center text-sm text-black">
+   <p class="flex-1 font-semibold">
+    Transaksi praktis pakai
+    <span class="flex items-center text-[#0a82e6] font-mono-custom italic font-semibold">
+     <i class="fas fa-shipping-fast mr-1">
+     </i>
+     EXPRESS PAY
+    </span>
+   </p>
+   <button aria-label="Information" class="w-7 h-7 rounded-full bg-[#0a82e6] text-white flex items-center justify-center text-xs font-bold">
+    i
+   </button>
+  </section>
+  <!-- Bottom fixed button -->
+  <footer class="fixed bottom-0 left-0 w-full px-4 pb-[env(safe-area-inset-bottom)] pt-3 bg-white">
+   <button class="w-full bg-gray-300 text-white font-semibold text-base rounded-md py-3" disabled="" type="button">
+    TAMBAH KARTU BARU
+   </button>
+  </footer>
+ </body>
+</html>

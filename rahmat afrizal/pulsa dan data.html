@@ -1,0 +1,248 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Pulsa &amp; Data
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#0B7ED9] min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex items-center px-4 py-3 text-white">
+    <a href="../alfurqon/index.html">
+   <button aria-label="Back" class="mr-3 text-2xl leading-none">
+    <i class="fas fa-chevron-left">
+    </i>
+   </button>
+  </a>
+   <h1 class="text-lg font-semibold flex-grow">
+    Pulsa &amp; Data
+   </h1>
+   <button aria-label="History" class="text-2xl leading-none">
+    <i class="fas fa-file-invoice">
+    </i>
+   </button>
+  </header>
+  <!-- Banner -->
+  <section class="px-4 mb-4">
+   <div class="rounded-xl overflow-hidden flex bg-gradient-to-r from-[#004BA0] to-[#0059B3]" style="max-width: 100%;">
+    <div class="flex flex-col justify-center px-4 py-5 max-w-[60%]">
+     <div class="text-xs font-bold text-[#FFE600] mb-1 leading-none">
+      Untung Terus
+     </div>
+     <h2 class="text-white text-xl font-semibold leading-tight mb-1">
+      ISI PAKET DATA
+     </h2>
+     <p class="text-white text-sm leading-tight mb-3">
+      Mulai
+      <span class="bg-[#FF3B6B] rounded-full px-2 py-0.5 text-xs font-semibold">
+       Rp1.000
+      </span>
+      -an Aja
+     </p>
+     <div class="flex flex-wrap gap-2 max-w-[220px]">
+      <img alt="Telkomsel logo red square with white T letter" class="rounded" height="32" src="https://storage.googleapis.com/a1aa/image/1f2c3b6f-d19f-4642-b3d7-afac371db154.jpg" width="32"/>
+      <img alt="IM3 logo yellow square with black IM3 text" class="rounded" height="32" src="https://storage.googleapis.com/a1aa/image/e808f697-765b-4b53-ec00-e1ee8c8cf828.jpg" width="32"/>
+      <img alt="3 (Tri) logo red square with white number 3" class="rounded" height="32" src="https://storage.googleapis.com/a1aa/image/6109cfc5-500d-4e57-f5e1-725a8c26d112.jpg" width="32"/>
+      <img alt="XL logo dark blue square with white XL text" class="rounded" height="32" src="https://storage.googleapis.com/a1aa/image/5b2ac462-ff13-4cfb-d3e1-06216715daf0.jpg" width="32"/>
+      <img alt="AXIS logo purple square with white AXIS text" class="rounded" height="32" src="https://storage.googleapis.com/a1aa/image/9ff96c53-d620-4249-a235-8ba33b669b88.jpg" width="32"/>
+      <img alt="Smartfren logo pink square with white SF text" class="rounded" height="32" src="https://storage.googleapis.com/a1aa/image/ad316dbb-396d-45cc-b6b8-1e66f97929b7.jpg" width="32"/>
+     </div>
+    </div>
+    <div class="relative max-w-[40%] flex items-center justify-center bg-pink-400">
+     <img alt="Man smiling and pointing at his smartphone with wifi and Rp icons floating" class="object-cover rounded-tr-xl rounded-br-xl" height="120" src="https://storage.googleapis.com/a1aa/image/5a5f10ef-aeb0-4eff-4720-cd4386858917.jpg" width="160"/>
+    </div>
+   </div>
+  </section>
+  <!-- Phone number input -->
+  <section class="bg-white rounded-t-xl px-4 py-4 mb-2">
+   <div class="flex justify-between items-center mb-2">
+    <label class="text-gray-600 font-semibold text-sm" for="phone">
+     NOMOR HP
+    </label>
+    <button class="text-[#0B7ED9] text-sm font-semibold">
+     No. Pascabayar?
+    </button>
+   </div>
+   <div class="flex items-center border border-gray-300 rounded-lg px-3 py-2 max-w-md">
+    <img alt="Telkomsel logo red circle with white T letter" class="w-6 h-6 rounded-full mr-2" height="24" src="https://storage.googleapis.com/a1aa/image/0b7d8e1b-80fd-4479-40e2-94c470be3628.jpg" width="24"/>
+    <div class="flex flex-col flex-grow">
+     <span class="text-xs text-gray-600">
+      Nomor DANA Kamu
+     </span>
+     <span class="text-base font-normal leading-tight">
+      0812 3246 1038
+     </span>
+    </div>
+    <button aria-label="Clear phone number" class="text-gray-400 hover:text-gray-600 ml-2">
+     <i class="fas fa-times-circle text-lg">
+     </i>
+    </button>
+    <button aria-label="Contacts" class="ml-3 bg-[#0B7ED9] rounded px-2 py-1">
+     <i class="fas fa-address-book text-white text-lg">
+     </i>
+    </button>
+   </div>
+  </section>
+  <!-- Tabs -->
+  <nav class="bg-white flex border-b border-gray-300 mb-3 px-4">
+   <button aria-current="page" class="flex-grow text-[#0B7ED9] border-b-2 border-[#0B7ED9] py-2 font-semibold text-base">
+    Pulsa
+   </button>
+   <a href="data.html">
+   <button class="flex-grow text-gray-500 py-2 font-semibold text-base">
+    Data
+   </button>
+  </nav>
+</a>
+  <!-- Pulsa cards grid -->
+  <main class="bg-white flex-grow px-4 pb-6">
+   <div class="grid grid-cols-2 gap-3">
+    <a href="isi pulsa 2ribu.html">
+    <!-- Card 1 -->
+    <div class="border border-gray-200 rounded-lg p-4">
+     <div class="flex items-baseline font-semibold text-lg">
+      <span>
+       2
+      </span>
+      <span class="ml-1 text-base font-normal">
+       Rb
+      </span>
+     </div>
+     <p class="text-gray-400 text-xs mb-1">
+      Masa Aktif 7 hari
+     </p>
+     <p class="text-gray-300 line-through text-sm mb-1">
+      Rp3.400
+     </p>
+     <div class="flex items-center gap-1 mb-1">
+      <img alt="Discount icon orange" class="w-3.5 h-3.5" height="14" src="https://storage.googleapis.com/a1aa/image/97c3011d-d7d9-4444-7fe1-b30e64c899ae.jpg" width="14"/>
+     </div>
+     <p class="text-[#0B7ED9] font-semibold text-lg">
+      Rp3.300
+     </p>
+    </div>
+  </a>
+  <a href="isi pulsa 3ribu.html">
+    <!-- Card 2 -->
+    <div class="border border-gray-200 rounded-lg p-4">
+     <div class="flex items-baseline font-semibold text-lg">
+      <span>
+       3
+      </span>
+      <span class="ml-1 text-base font-normal">
+       Rb
+      </span>
+     </div>
+     <p class="text-gray-400 text-xs mb-1">
+      Masa Aktif 7 hari
+     </p>
+     <p class="text-gray-300 line-through text-sm mb-1">
+      Rp4.900
+     </p>
+     <div class="flex items-center gap-1 mb-1">
+      <img alt="Discount icon orange" class="w-3.5 h-3.5" height="14" src="https://storage.googleapis.com/a1aa/image/97c3011d-d7d9-4444-7fe1-b30e64c899ae.jpg" width="14"/>
+     </div>
+     <p class="text-[#0B7ED9] font-semibold text-lg">
+      Rp4.750
+     </p>
+    </div>
+    <!-- Card 3 (highlighted) -->
+    <div class="relative rounded-lg p-4 bg-[#0B7ED9] text-white">
+     <div class="absolute top-1 right-1 bg-white text-[#0B7ED9] text-[10px] font-bold rounded px-2 py-[2px] leading-none select-none">
+      HARGA TERBAIK
+     </div>
+     <div class="flex items-center gap-2 font-semibold text-lg mb-1">
+      <i class="fas fa-fire">
+      </i>
+      <span>
+       5
+      </span>
+      <span class="text-base font-normal">
+       Rb
+      </span>
+     </div>
+     <p class="text-white text-xs mb-1">
+      Masa Aktif 7 hari
+     </p>
+     <p class="text-white/60 line-through text-sm mb-1">
+      Rp6.250
+     </p>
+     <div class="flex items-center gap-1 mb-1">
+      <img alt="Discount icon blue" class="w-3.5 h-3.5" height="14" src="https://storage.googleapis.com/a1aa/image/bbcbf0b4-c27a-4394-6d94-566413b139be.jpg" width="14"/>
+     </div>
+     <p class="text-white font-semibold text-lg">
+      Rp6.000
+     </p>
+    </div>
+  </a>
+    <!-- Card 4 -->
+    <div class="border border-gray-200 rounded-lg p-4">
+     <div class="flex items-baseline font-semibold text-lg">
+      <span>
+       10
+      </span>
+      <span class="ml-1 text-base font-normal">
+       Rb
+      </span>
+     </div>
+     <p class="text-gray-400 text-xs mb-1">
+      Masa Aktif 15 hari
+     </p>
+     <p class="text-[#0B7ED9] font-semibold text-lg">
+      Rp11.000
+     </p>
+    </div>
+    <!-- Card 5 -->
+    <div class="border border-gray-200 rounded-lg p-4">
+     <div class="flex items-baseline font-semibold text-lg">
+      <span>
+       15
+      </span>
+      <span class="ml-1 text-base font-normal">
+       Rb
+      </span>
+     </div>
+     <p class="text-gray-400 text-xs mb-1">
+      Masa Aktif 20 hari
+     </p>
+     <p class="text-[#0B7ED9] font-semibold text-lg">
+      Rp15.990
+     </p>
+    </div>
+    <!-- Card 6 -->
+    <div class="border border-gray-200 rounded-lg p-4">
+     <div class="flex items-baseline font-semibold text-lg">
+      <span>
+       20
+      </span>
+      <span class="ml-1 text-base font-normal">
+       Rb
+      </span>
+     </div>
+     <p class="text-gray-400 text-xs mb-1">
+      Masa Aktif 30 hari
+     </p>
+     <p class="text-gray-300 line-through text-sm mb-1">
+      Rp21.500
+     </p>
+     <div class="flex items-center gap-1 mb-1">
+      <img alt="Discount icon orange" class="w-3.5 h-3.5" height="14" src="https://storage.googleapis.com/a1aa/image/97c3011d-d7d9-4444-7fe1-b30e64c899ae.jpg" width="14"/>
+     </div>
+     <p class="text-[#0B7ED9] font-semibold text-lg">
+      Rp20.990
+     </p>
+    </div>
+   </div>
+  </main>
+ </body>
+</html>

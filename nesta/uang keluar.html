@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DANA Statement</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    /* Custom styles for the timeline circles and line */
+    .timeline-line {
+      border-top: 1.5px solid #fbbf24; /* Tailwind amber-400 */
+      position: relative;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .timeline-circle {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #fbbf24; /* amber-400 */
+      background-color: transparent;
+      border-radius: 9999px;
+      position: absolute;
+      top: -6px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-[#0d82e8] text-white relative">
+      <div class="flex items-center px-4 py-3">
+        <a href="profil.html">
+        <button aria-label="Back" class="text-white text-2xl">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+    </a>
+        <h1 class="flex-1 text-center font-semibold text-lg leading-6">
+          DANA Statement
+        </h1>
+        <div class="w-6"></div>
+      </div>
+      <!-- Timeline -->
+      <div class="relative h-20">
+        <div class="timeline-line mx-4"></div>
+        <!-- Circles with dates -->
+        <div class="timeline-circle left-[4.5%]"></div>
+        <div class="absolute top-6 left-[4.5%] text-[10px] text-white select-none">28</div>
+
+        <div class="timeline-circle left-[28.5%]"></div>
+        <div class="absolute top-6 left-[28.5%] text-[10px] text-white select-none">29</div>
+
+        <div class="timeline-circle left-[52.5%]"></div>
+        <div class="absolute top-6 left-[52.5%] text-[10px] text-white select-none">30</div>
+
+        <div class="timeline-circle left-[76.5%]"></div>
+        <div class="absolute top-6 left-[76.5%] text-[10px] text-white select-none">31</div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="flex-1 bg-gray-100 px-5 pt-5 pb-10">
+      <section>
+        <div class="flex justify-between items-center mb-1">
+          <h2 class="text-black text-2xl font-semibold leading-7">Mei</h2>
+          <button aria-label="Previous Month" class="bg-[#0d82e8] w-10 h-10 rounded-full flex items-center justify-center text-white text-2xl">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+        </div>
+        <p class="text-gray-500 text-sm mb-5">1 Mei - 30 Mei 2025</p>
+
+        <div class="flex gap-4 mb-4">
+          <div class="flex-1 bg-[#0d82e8] rounded-md relative p-4 text-white">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center">
+                <i class="fas fa-arrow-down"></i>
+              </div>
+              <div>
+                <p class="text-sm font-normal">Uang Masuk</p>
+                <p class="font-bold text-lg leading-6">Rp100</p>
+              </div>
+            </div>
+            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[10px] border-l-transparent border-r-transparent border-t-[#0d82e8]"></div>
+          </div>
+          <div class="flex-1 bg-white rounded-md p-4 text-gray-700">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center text-white">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+              <div>
+                <p class="text-sm font-normal">Uang Keluar</p>
+                <p class="font-bold text-lg leading-6">Rp0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-md p-4 flex items-center gap-4 mb-5">
+          <div class="w-10 h-10 rounded-full border border-orange-500 flex items-center justify-center text-orange-500">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div>
+            <p class="text-sm text-gray-400 mb-1">Terima Uang</p>
+            <p class="font-bold text-lg leading-6 text-black">Rp100</p>
+          </div>
+        </div>
+
+        <p class="text-center text-gray-500 text-sm mb-5">
+          Detail dapat dilihat di Riwayat Transaksi
+        </p>
+<a href="eksport statement.html">
+        <button
+          class="w-full bg-[#0d82e8] text-white font-semibold text-lg py-3 rounded-md"
+          type="button"
+        >
+          EXPORT STATEMENT
+        </button>
+    </a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

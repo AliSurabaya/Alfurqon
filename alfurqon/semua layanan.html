@@ -1,0 +1,201 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Semua Layanan
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for horizontal scroll */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+ </head>
+ <body class="bg-[#f5f7fa] font-sans text-[14px] leading-tight text-[#1a1a1a]">
+  <!-- Header -->
+  <header class="bg-[#1e90ff] flex items-center justify-between px-4 py-3">
+    <a href="index.html">
+   <button aria-label="Back" class="text-white text-2xl font-bold">
+    <i class="fas fa-chevron-left">
+    </i>
+   </button>
+</a>
+   <h1 class="text-white font-bold text-lg">
+    Semua Layanan
+   </h1>
+   <button aria-label="Search" class="text-white text-2xl font-bold">
+    <i class="fas fa-search">
+    </i>
+   </button>
+  </header>
+  <main class="p-4 space-y-4">
+   <!-- Favorit Saya -->
+   <section class="bg-white rounded-xl p-3 flex items-center space-x-2">
+    <span class="text-base font-normal">
+     Favorit Saya
+    </span>
+    <div class="flex space-x-1 overflow-x-auto scrollbar-hide">
+     <img alt="Blue icon with steering wheel symbol" class="rounded-md" height="32" src="https://storage.googleapis.com/a1aa/image/2fb6798b-a562-402d-00e3-16b4ead2f1aa.jpg" width="32"/>
+     <img alt="Orange icon with percentage symbol" class="rounded-md" height="32" src="https://storage.googleapis.com/a1aa/image/a745ec53-a5a4-4fcd-a781-c251cd273335.jpg" width="32"/>
+     <img alt="Pink icon with free voucher symbol" class="rounded-md" height="32" src="https://storage.googleapis.com/a1aa/image/c24cecfc-a1fd-4bdf-7313-e10f4317d29c.jpg" width="32"/>
+     <div class="bg-[#fbe6d1] text-[#f7941e] text-xs font-semibold rounded-md px-1.5 py-1 select-none">
+      +4
+     </div>
+    </div>
+    <button aria-label="Expand" class="ml-auto text-[#1e90ff] text-xl font-bold">
+     <i class="fas fa-chevron-down">
+     </i>
+    </button>
+   </section>
+   <!-- Terakhir Dibuka -->
+   <section class="bg-white rounded-xl p-4 space-y-3">
+    <h2 class="font-semibold text-base">
+     Terakhir Dibuka
+    </h2>
+    <div class="grid grid-cols-5 gap-y-3 gap-x-2 text-center">
+     <div class="flex flex-col items-center space-y-1">
+      <img alt="Purple icon with electronic money symbol" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/d663eb7f-2d8d-4b98-88b5-49add9830b3b.jpg" width="32"/>
+      <span class="text-[11px] leading-tight">
+       Uang
+       <br/>
+       Elektronik
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-1">
+      <img alt="Blue icon with satellite dish symbol" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/ee5cbdfa-99e6-4306-8bf3-d729ec473629.jpg" width="32"/>
+      <span class="text-[11px] leading-tight">
+       Internet &amp; TV
+       <br/>
+       Kabel
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-1">
+      <img alt="Orange icon with bank building symbol" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/0a6a4b63-8e4d-4008-9d94-c51ddb50ab7b.jpg" width="32"/>
+      <span class="text-[11px] leading-tight">
+       Kirim ke Bank
+      </span>
+     </div>
+     <a href="../rahmat afrizal/pulsa dan data.html">
+     <div class="flex flex-col items-center space-y-1">
+      <img alt="Red icon with phone and Rp symbol" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/b04ad843-a1e6-44fc-e40e-07e61e4f3fab.jpg" width="32"/>
+      <span class="text-[11px] leading-tight">
+       Pulsa &amp; Data
+      </span>
+     </div>
+    </a>
+     <a href="dana deals.html">
+     <div class="flex flex-col items-center space-y-1">
+      <img alt="Orange icon with percentage symbol" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/a745ec53-a5a4-4fcd-a781-c251cd273335.jpg" width="32"/>
+      <span class="text-[11px] leading-tight">
+       DANA Deals
+      </span>
+     </div>
+    </a>
+     <div class="flex flex-col items-center space-y-1">
+      <img alt="Pink icon with person and lightbulb symbol" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/59d021b6-4d62-435e-136e-a06cc7f80c6b.jpg" width="32"/>
+      <span class="text-[11px] leading-tight">
+       Sisberdaya
+      </span>
+     </div>
+    </div>
+    <button aria-label="Collapse" class="ml-auto block text-[#1e90ff] text-xl font-bold">
+     <i class="fas fa-chevron-up">
+     </i>
+    </button>
+   </section>
+   <!-- Cobain Yuk! -->
+   <section class="bg-white rounded-xl p-4 space-y-4">
+    <h3 class="font-semibold text-base">
+     Cobain Yuk!
+    </h3>
+    <ul class="space-y-3">
+     <li class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+       <img alt="Red credit card icon" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/6d0cfba6-da5e-4455-fb1f-56248c7b7c67.jpg" width="32"/>
+       <span class="text-base font-normal">
+        Credit Card
+       </span>
+      </div>
+      <a href="kartu kredit.html">
+      <button class="text-[#1e90ff] border border-[#1e90ff] rounded-md px-4 py-1 text-sm font-semibold">
+       COBA
+      </button>
+    </a>
+     </li>
+     <li class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+       <img alt="Orange gold chest icon" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/6b29a7b7-113e-4095-acf9-b096eb47fc32.jpg" width="32"/>
+       <div>
+        <p class="text-base font-semibold">
+         eMAS
+        </p>
+        <p class="text-xs text-gray-500 leading-tight">
+         Investasi emas digital mudah &amp; aman
+        </p>
+       </div>
+      </div>
+      <a href="../nesta/emas.html">
+      <button class="text-[#1e90ff] border border-[#1e90ff] rounded-md px-4 py-1 text-sm font-semibold">
+       COBA
+      </button>
+    </a>
+     </li>
+     <li class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+       <img alt="Orange icon with percentage symbol" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/a745ec53-a5a4-4fcd-a781-c251cd273335.jpg" width="32"/>
+       <div>
+        <p class="text-base font-semibold">
+         DANA Deals
+        </p>
+        <p class="text-xs text-gray-500 leading-tight">
+         Beli voucher terbaik di DANA!
+        </p>
+       </div>
+      </div>
+      <a href="dana deals.html">
+      <button class="text-[#1e90ff] border border-[#1e90ff] rounded-md px-4 py-1 text-sm font-semibold">
+       COBA
+      </button>
+    </a>
+      <i class="fas fa-chevron-right text-gray-400">
+      </i>
+     </li>
+    </ul>
+   </section>
+   <!-- Banner + DANA Deals -->
+   <section class="bg-white rounded-xl overflow-hidden">
+    <img alt="Blue banner with text Hemat di merchant favorit pakai Voucher DANA Deals and megaphone with orange and blue vouchers floating" class="w-full object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/447a92df-8aa0-4566-1857-9cacf69a0f99.jpg" width="600"/>
+    <div class="flex items-center justify-between p-4">
+     <div class="flex items-center space-x-3">
+      <img alt="Orange icon with percentage symbol" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/a745ec53-a5a4-4fcd-a781-c251cd273335.jpg" width="32"/>
+      <div>
+       <p class="text-base font-semibold">
+        DANA Deals
+       </p>
+       <div class="flex items-center space-x-2 text-xs text-gray-500">
+        <span class="bg-[#d0e9ff] text-[#1e90ff] rounded px-1.5 py-0.5 font-semibold select-none">
+         Rekomendasi
+        </span>
+        <span>
+         Paling populer sekarang
+        </span>
+       </div>
+      </div>
+     </div>
+     <button class="text-[#1e90ff] border border-[#1e90ff] rounded-md px-4 py-1 text-sm font-semibold">
+      COBA
+     </button>
+    </div>
+   </section>
+  </main>
+  </nav>
+ </body>
+</html>

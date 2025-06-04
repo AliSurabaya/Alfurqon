@@ -1,0 +1,121 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Buat Impian Baru
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for horizontal scroll */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+ </head>
+ <body class="bg-[#f5f6f8] font-sans text-black">
+  <!-- Header -->
+  <header class="bg-[#0d8aff] flex items-center px-4 py-3">
+    <a href="dana goals.html">
+   <button aria-label="Back" class="text-white text-2xl pr-4">
+    <i class="fas fa-chevron-left">
+    </i>
+   </button>
+</a>
+   <h1 class="flex-1 text-center text-white font-semibold text-lg leading-6">
+    Buat Impian Baru
+   </h1>
+   <div class="w-8">
+   </div>
+  </header>
+  <!-- Content -->
+  <main class="px-4 pt-4 pb-24 bg-white">
+   <!-- Jenis Impian label -->
+   <p class="text-base font-semibold mb-3">
+    Jenis Impian
+   </p>
+   <!-- Scrollable categories -->
+   <div class="flex space-x-6 overflow-x-auto scrollbar-hide pb-3">
+    <!-- Kasual selected -->
+    <div class="flex flex-col items-center relative">
+     <div class="rounded-full border-4 border-[#0d8aff] p-1">
+      <img alt="Kasual category icon with a blue border and checkmark" class="rounded-full" height="64" src="https://storage.googleapis.com/a1aa/image/a5150c4b-adfa-4884-f2a9-ea78658f2ea2.jpg" width="64"/>
+     </div>
+     <div class="absolute top-0 right-0 bg-[#0d8aff] rounded-full w-6 h-6 flex items-center justify-center border-2 border-white">
+      <i class="fas fa-check text-white text-sm">
+      </i>
+     </div>
+     <span class="mt-2 text-sm text-[#3a2e2e]">
+      Kasual
+     </span>
+    </div>
+    <!-- Travel -->
+    <div class="flex flex-col items-center">
+     <div class="rounded-full bg-[#d9d9d9] p-2">
+      <img alt="Travel category icon with beige background" class="rounded-full" height="64" src="https://storage.googleapis.com/a1aa/image/8899383d-8434-4e11-8c57-b30589d050f6.jpg" width="64"/>
+     </div>
+     <span class="mt-2 text-sm text-[#3a2e2e]">
+      Travel
+     </span>
+    </div>
+    <!-- Gadget -->
+    <div class="flex flex-col items-center">
+     <div class="rounded-full bg-[#d9d9d9] p-2">
+      <img alt="Gadget category icon with light gray background" class="rounded-full" height="64" src="https://storage.googleapis.com/a1aa/image/18fca07f-8ea8-44cb-2da9-6a3a4a28efff.jpg" width="64"/>
+     </div>
+     <span class="mt-2 text-sm text-[#3a2e2e]">
+      Gadget
+     </span>
+    </div>
+    <!-- Fashion -->
+    <div class="flex flex-col items-center">
+     <div class="rounded-full bg-[#d9d9d9] p-2">
+      <img alt="Fashion category icon with light pink background" class="rounded-full" height="64" src="https://storage.googleapis.com/a1aa/image/998eac4e-b4aa-4800-05c1-9f3ac6f394c7.jpg" width="64"/>
+     </div>
+     <span class="mt-2 text-sm text-[#3a2e2e]">
+      Fashion
+     </span>
+    </div>
+    <!-- Elektronik -->
+    <div class="flex flex-col items-center">
+     <div class="rounded-full bg-[#d9d9d9] p-2">
+      <img alt="Elektronik category icon with light green background" class="rounded-full" height="64" src="https://storage.googleapis.com/a1aa/image/743067fe-e7f5-4355-405c-534fa104653a.jpg" width="64"/>
+     </div>
+     <span class="mt-2 text-sm text-[#3a2e2e] truncate max-w-[64px]">
+      Elektronik
+     </span>
+    </div>
+   </div>
+   <hr class="border-t border-gray-300 mb-4"/>
+   <!-- Nama Impian -->
+   <label class="block font-semibold mb-1 text-base" for="nama-impian">
+    Nama Impian
+   </label>
+   <input class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d8aff] focus:border-transparent mb-6" id="nama-impian" placeholder="Tulis impianmu di sini" type="text"/>
+   <!-- Jumlah Target -->
+   <label class="block font-semibold mb-1 text-base" for="jumlah-target">
+    Jumlah Target
+   </label>
+   <input class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d8aff] focus:border-transparent" id="jumlah-target" placeholder="Rp0" type="text"/>
+   <p class="text-xs text-gray-500 mt-1 flex items-center space-x-1">
+    <span>
+     Jumlah target maksimum Rp1.500.000.
+    </span>
+    <i class="fas fa-question-circle text-[#0d8aff]">
+    </i>
+   </p>
+  </main>
+  <!-- Bottom fixed button -->
+  <div class="fixed bottom-0 left-0 w-full bg-[#f5f6f8] p-4">
+   <button class="w-full bg-gray-400 text-white font-semibold py-3 rounded-md tracking-wide" disabled="">
+    BUAT IMPIAN
+   </button>
+  </div>
+ </body>
+</html>

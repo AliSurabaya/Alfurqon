@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riwayat Transaksi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <a href="../alfurqon/index.html" class="btn btn-primary">beranda</a>
+
+  <!-- Filter -->
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="text" id="searchInput" class="form-control" placeholder="Cari kirim uang...">
+    </div>
+    <div class="col-md-3">
+      <select id="monthFilter" class="form-select">
+        <option value="">Semua Bulan</option>
+        <option value="apr">April  </option>
+        <option value="apr"> juni </option>
+        <option value="apr">juli </option>
+        <!-- Tambah opsi lain jika ada data bulan lain -->
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <select id="yearFilter" class="form-select">
+        <option value="">Semua Tahun</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+
+        <!-- Tambah tahun lainnya sesuai data -->
+      </select>
+    </div>
+  </div>
+
+  <ul id="transactionList" class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-start" data-date="30 apr 2025">
+      <div>
+        <a href="isi saldo dari A.html">
+        <div class="fw-bold">Isi Saldo dari A+ Rewards</div>
+        <small>30 Apr 2025 • 12:35</small>
+      </div>
+      <span class="text-success">Rp50</span>
+    </a>
+    </li>
+     
+    <li class="list-group-item d-flex justify-content-between align-items-start" data-date="29 apr 2025">
+      <div>
+        <a href="bayar dapur bunda.html">
+        <div class="fw-bold">DAPUR-BUNDA</div>
+        <small>29 Apr 2025 • 12:45</small>
+      </div>
+      <span class="text-danger">-Rp5.000</span>
+    </a>
+    </li>
+
+    
+
+    <li class="list-group-item d-flex justify-content-between align-items-start" data-date="28 apr 2025">
+      <div>
+        <a href="kirim uang.html">
+        <div class="fw-bold">Kirim Uang</div>
+        <small>28 juni 2025 • 19:23</small>
+      </div>
+      <span class="text-danger">-Rp10.000</span>
+    </a>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between align-items-start" data-date="27 apr 2025">
+      <div>
+        <a href="Terima uang.html">
+        <div class="fw-bold">Terima Uang</div>
+        <small>27 juli 2025 • 12:53</small>
+      </div>
+      <span class="text-success">Rp10.000</span>
+    </a>
+    </li>
+  </ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- (Hanya bagian JS yang diperbarui, HTML-nya tetap sama) -->
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const monthFilter = document.getElementById("monthFilter");
+  const yearFilter = document.getElementById("yearFilter");
+  const transactionItems = document.querySelectorAll("#transactionList li");
+
+  function filterTransactions() {
+    const searchValue = searchInput.value.toLowerCase();
+    const monthValue = monthFilter.value;
+    const yearValue = yearFilter.value;
+
+    transactionItems.forEach(item => {
+      const title = item.querySelector(".fw-bold").textContent.toLowerCase(); // Hanya judul transaksi
+      const date = item.getAttribute("data-date");
+
+      const matchText = title.includes(searchValue);
+      const matchMonth = !monthValue || date.includes(monthValue);
+      const matchYear = !yearValue || date.includes(yearValue);
+
+      item.style.display = matchText && matchMonth && matchYear ? "" : "none";
+    });
+  }
+
+  searchInput.addEventListener("input", filterTransactions); // realtime input
+  monthFilter.addEventListener("change", filterTransactions); // realtime input
+  yearFilter.addEventListener("change", filterTransactions); // realtime input
+</script>
+</body>
+</html>
